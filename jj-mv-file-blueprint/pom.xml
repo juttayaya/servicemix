@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    
+    <parent>
+        <groupId>org.apache.servicemix</groupId>
+        <artifactId>parent</artifactId>
+        <version>4.5.3</version>
+    </parent>
+
+    <groupId>org.jirawat.servicemix.tutorial</groupId>
+    <artifactId>jj-mv-files-blueprint</artifactId>
+    <packaging>bundle</packaging>
+    <name>Java Jirawat Blueprint XML tutorial for files</name>
+    <description>Apache ServiceMix tutorial demonstrating moving files to different directories using Blueprint XML</description>
+    <version>1.0.0</version>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <configuration>
+                    <instructions>
+                        <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+                        <Bundle-Description>${project.description}</Bundle-Description>
+                        <Import-Package>*,org.apache.camel.osgi</Import-Package>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
